@@ -8,5 +8,10 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "pilot"),
+        .testTarget(
+            name: "pilotTests",
+            dependencies: ["pilot"],
+            path: "Tests"
+        )
     ]
 )
